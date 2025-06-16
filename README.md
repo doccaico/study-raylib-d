@@ -1,14 +1,8 @@
 ## study-raylib-d
 
-### Build and run
-```sh
-$ cd lifegame
+Only tested on Windows (using ldc2).
 
-$ dub upgrade
-$ dub run raylib-d:install
-
-$ dub run
-```
+- [lifegame](/lifegame/)
 
 ### Libraries used
 - [schveiguy/raylib-d](https://github.com/schveiguy/raylib-d)
