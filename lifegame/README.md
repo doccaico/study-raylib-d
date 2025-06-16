@@ -1,14 +1,25 @@
 ## lifegame
 
-### Run
+### Setting
 ```sh
 $ dub upgrade
-$ dub run raylib-d:install
-
-$ dub run -- -debug
+$ dub raylib-d:install
 ```
 
-### Release Build
+### Debug
 ```sh
-$ dub -a x86_64 -b release-nobounds
+# build
+$ dub build
+
+# build and run
+$ dub
+```
+
+### Release
+```sh
+# build
+$ dub build -b release-nobounds
+
+# build and run
+$ dub -b release-nobounds
 ```
