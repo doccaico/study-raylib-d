@@ -11,8 +11,8 @@ debug {
 const cellSize = 2;
 const initialCellCount = 40 * 2;
 const fps = 30 / 2;
-const screenWidth = 480 + 4;
-const screenHeight = 640 + 4;
+const screenWidth = 480;
+const screenHeight = 640;
 const colSize = (screenWidth / cellSize + 2);
 const rowSize = (screenHeight / cellSize + 2);
 const initialCellColor = rl.Colors.BLACK;
