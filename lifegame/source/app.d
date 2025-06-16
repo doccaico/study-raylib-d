@@ -5,9 +5,9 @@ import raylib;
 
 
 debug {
-    const(const char*) windowTitle = "lifegame (debug)";
+    const(char*) windowTitle = "lifegame (debug)";
 } else {
-    const(const char*) windowTitle = "lifegame";
+    const(char*) windowTitle = "lifegame";
 }
 
 const cellSize = 2;
