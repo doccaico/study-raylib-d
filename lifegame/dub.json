@@ -1,0 +1,1 @@
+{"libs" : ["raylib"], "lflags-posix" : ["-L."], "lflags-osx" : ["-rpath", "@executable_path/"], "lflags-linux" : ["-rpath=$$ORIGIN"], "description" : "A minimal D application.", "name" : "lifegame", "dependencies" : {"raylib-d" : "~>5.5.1"}, "authors" : ["doccaico"], "copyright" : "Copyright © 2025, doccaico", "license" : "MIT"}
