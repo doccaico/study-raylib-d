@@ -5,7 +5,7 @@
 $ dub upgrade
 $ dub run raylib-d:install
 
-$ dub run
+$ dub run -- -debug
 ```
 
 ### Release Build

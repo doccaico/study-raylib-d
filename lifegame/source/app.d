@@ -1,18 +1,37 @@
 // import std.stdio;
+// import std.string;
 
 import raylib;
+
+
+debug {
+    const(const char*) windowTitle = "lifegame (debug)";
+} else {
+    const(const char*) windowTitle = "lifegame";
+}
+
+const cellSize = 2;
+const initialCellCount = 80;
+const fps = 30;
+
+const screenWidth = 480;
+const screenHeight = 640;
+const colSize = (screenWidth / cellSize + 2);
+const rowSize = (screenHeight / cellSize + 2);
 
 void main()
 {
     // call this before using raylib
     validateRaylibBinding();
-    InitWindow(800, 600, "Hello, Raylib-D!");
-    SetTargetFPS(60);
-    while (!WindowShouldClose())
-    {
+
+    InitWindow(screenWidth, screenHeight, windowTitle);
+
+    SetTargetFPS(fps);
+
+    while (!WindowShouldClose()) {
         BeginDrawing();
         ClearBackground(Colors.RAYWHITE);
-        DrawText("Hello, World!", 400, 300, 28, Colors.BLACK);
+        // DrawText("Hello, World!", 400, 300, 28, Colors.BLACK);
         EndDrawing();
     }
     CloseWindow();
